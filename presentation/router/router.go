@@ -31,7 +31,7 @@ func Init() *echo.Echo {
 	u := e.Group("/user")
 	u.Use(middleware.JWT([]byte("secret")))
 	u.GET("/user_check", func(c echo.Context) error { return userController.Check(c) }) // user/user_login
-	u.DELETE("/user_delete/:userKey", func(c echo.Context) error { return userController.Delete(c) }) // user/user_delete
+	u.DELETE("/:userKey/user_delete", func(c echo.Context) error { return userController.Delete(c) }) // user/user_delete
 
 	e.Logger.Fatal(e.Start(":8000"))
 
