@@ -172,7 +172,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/user/user_delete/{userKey}": {
+        "/user/{userKey}/user_delete": {
             "delete": {
                 "security": [
                     {
