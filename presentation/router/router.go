@@ -5,14 +5,14 @@ import (
 	"github.com/labstack/echo/v4/middleware"
 
 	"github.com/observation-system/observation-auth/log"
-	"github.com/observation-system/observation-auth/infrastucture"
+	"github.com/observation-system/observation-auth/infrastructure"
 	"github.com/observation-system/observation-auth/presentation/controller"
 	_ "github.com/observation-system/observation-auth/docs/swagger"
 	echoSwagger "github.com/swaggo/echo-swagger"
 )
 
 func Init() *echo.Echo {
-	userController := controller.NewUserController(infrastucture.NewSqlHandler())
+	userController := controller.NewUserController(infrastructure.NewSqlHandler())
 
 	e := echo.New()
 
