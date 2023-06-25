@@ -10,8 +10,8 @@ import (
 	"github.com/observation-system/observation-auth/lib"
 	"github.com/observation-system/observation-auth/domain"
 	"github.com/observation-system/observation-auth/usecase"
-	"github.com/observation-system/observation-auth/presentation/database"
-	"github.com/observation-system/observation-auth/presentation/response"
+	"github.com/observation-system/observation-auth/database"
+	"github.com/observation-system/observation-auth/api/response"
 )
 
 type UserController struct {

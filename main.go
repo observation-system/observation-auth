@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/observation-system/observation-auth/presentation/router"
+	"github.com/observation-system/observation-auth/api/router"
 )
 
 func main() {

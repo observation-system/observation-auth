@@ -6,7 +6,7 @@ import (
 
 	"github.com/observation-system/observation-auth/log"
 	"github.com/observation-system/observation-auth/infrastructure"
-	"github.com/observation-system/observation-auth/presentation/controller"
+	"github.com/observation-system/observation-auth/api/controller"
 	_ "github.com/observation-system/observation-auth/docs/swagger"
 	echoSwagger "github.com/swaggo/echo-swagger"
 )
